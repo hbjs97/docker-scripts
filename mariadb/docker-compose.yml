@@ -1,0 +1,17 @@
+version: "3.2"
+
+volumes:
+  mariadb_data:
+
+services:
+  mariadb:
+    build:
+      context: .
+      dockerfile: mariadb.Dockerfile
+    ports:
+      - 13309:3306
+    restart: always
+    volumes:
+      - mariadb_data:/var/lib/mariadb
+    env_file:
+      - .env
