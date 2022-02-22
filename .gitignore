@@ -1,2 +1,6 @@
 **/.env
+
 **/nGrinder/ngrinder-controller
+
+**/rabbitMq/data
+**/rabbitMq/log
